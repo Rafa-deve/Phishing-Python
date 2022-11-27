@@ -1,12 +1,12 @@
 # BlackEye Python
-BlackEye Phishing Kit 32 Templates + 1 Customizable
+BlackEye Phishing Kit 32 Modelos + 1 Personalizável
 
-**USE FOR EDUCATIONAL PURPOSES ONLY**
+**UTILIZAÇÃO APENAS PARA FINS EDUCATIVOS**
 
 ![alt text](https://image.prntscr.com/image/Ly8QtJxBSFKiMMcD1qrpeg.png)
 
-Converted from https://github.com/thelinuxchoice/blackeye
+Convertido de https://github.com/thelinuxchoice/blackeye
 
-Uses Site Templates From BlackEye but you can host with a custom sub-domain to Serveo.
+Usa modelos de site do BlackEye, mas você pode hospedar com um subdomínio personalizado para o Serveo.
 
-Requires PHP and SSH to be installed.
+Requer PHP e SSH para ser instalado.

